@@ -4,7 +4,7 @@ import { ComponentDivider } from "@src/core/component/divider"
 import { ComponentFooter } from "@src/core/component/footer"
 import { ComponentHelmet } from "@src/core/component/helmet"
 import { ComponentNav } from "@src/core/component/nav"
-import { HTML, NodeText } from "htmlforge"
+import { HTMLDocument, NodeText } from "htmlforge"
 import { bodyStyle } from "@src/core/shim/body-style"
 import { SITEMAP, TITLE_PREFIX } from "@src/core/constant"
 import { ROOT_DIRECTORY } from "@src/core/root"
@@ -20,7 +20,7 @@ type BlogManifestEntry = {
 const BLOG_DATA_PATH = join(ROOT_DIRECTORY, "blog")
 
 export const blogBuild = () => {
-    const rootDoc = new HTML()
+    const rootDoc = new HTMLDocument()
     const container = new ComponentContainer()
     const articles : BlogManifestEntry[]  = []
 
@@ -39,17 +39,17 @@ export const blogBuild = () => {
         .childAdd(new ComponentDivider())
 
     const blogArtifacts : {
-        URL: string
-        document: HTML
+        path: string
+        document: HTMLDocument
     }[] = [{
-        URL: SITEMAP.blog.URL,
+        path: SITEMAP.blog.path,
         document: rootDoc
     }]
 
     for (const article of articles) {
         const articleSlug = article.src.split(".")[0] as string
-        const articleDoc = new HTML()
-        const articleURL = `/blog/${articleSlug}.html`
+        const articleDoc = new HTMLDocument()
+        const articlePath = `/blog/${articleSlug}.html`
         const articleContainer = new ComponentContainer()
             .childAdd(new ComponentNav())
             .childAdd(new ComponentDivider())
@@ -65,11 +65,11 @@ export const blogBuild = () => {
         articleContainer.childAdd(new ComponentMarkdown(markdown))
 
         container
-            .childAdd(new ComponentAnchor({ href: articleURL })
+            .childAdd(new ComponentAnchor({ href: articlePath })
                 .childAdd(new NodeText(article.name))
             )
 
-        blogArtifacts.push({ document: articleDoc, URL: articleURL })
+        blogArtifacts.push({ document: articleDoc, path: articlePath })
     }
 
     return blogArtifacts

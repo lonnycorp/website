@@ -18,15 +18,15 @@ export class ComponentNav implements INode {
                     .childAdd(new NodeText(TITLE_PREFIX))
             )
             .childAdd(
-                new ComponentAnchor({ href: SITEMAP.home.URL })
+                new ComponentAnchor({ href: SITEMAP.home.path })
                     .childAdd(new NodeText(SITEMAP.home.name))
             )
             .childAdd(
-                new ComponentAnchor({ href: SITEMAP.blog.URL })
+                new ComponentAnchor({ href: SITEMAP.blog.path })
                     .childAdd(new NodeText(SITEMAP.blog.name))
             )
             .childAdd(
-                new ComponentAnchor({ href: SITEMAP.contact.URL })
+                new ComponentAnchor({ href: SITEMAP.contact.path })
                     .childAdd(new NodeText(SITEMAP.contact.name))
             )
     }

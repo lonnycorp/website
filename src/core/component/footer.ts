@@ -1,4 +1,4 @@
-import { NodeElement, NodeText, type BuildArtifact, type INode } from "htmlforge"
+import { NodeElement, NodeText, type INode } from "htmlforge"
 
 const FOOTER_TEXT = "2025 The Lonny Corporation. All rights reserved."
 

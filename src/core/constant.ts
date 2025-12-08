@@ -8,14 +8,14 @@ export const DIST_PATH = join(ROOT_DIRECTORY, "dist")
 export const SITEMAP = {
     home: {
         name: "Home",
-        URL: "/index.html"
+        path: "/index.html"
     },
     blog: {
         name: "Blog",
-        URL: "/blog.html"
+        path: "/blog.html"
     },
     contact: {
         name: "Contact",
-        URL: "/contact.html"
+        path: "/contact.html"
     },
 } as const

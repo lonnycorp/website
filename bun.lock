@@ -4,7 +4,7 @@
     "": {
       "name": "website",
       "dependencies": {
-        "htmlforge": "^0.0.15",
+        "htmlforge": "^0.0.17",
         "mdast-util-from-markdown": "^2.0.2",
         "shiki": "^3.15.0",
       },
@@ -216,7 +216,7 @@
 
     "html-void-elements": ["html-void-elements@3.0.0", "", {}, "sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg=="],
 
-    "htmlforge": ["htmlforge@0.0.15", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-slWxu7vdwrYuD7uSzyK8o4YMJLsqfn5tB40dcy4Sfhv8Ywk7zNoHUGpTU9y7Eu1hGtYB+VGOlSK9XWK1fuvOdg=="],
+    "htmlforge": ["htmlforge@0.0.17", "", { "peerDependencies": { "typescript": "^5" } }, "sha512-3ZTMJzQwXk0RUjb9kI06dhNsJYue5m62u8VBE6bI2rZCaBNwCBUcZ3BJal+NuB0tqOSX1KB2Gx11QkmH0VPEgQ=="],
 
     "ignore": ["ignore@7.0.5", "", {}, "sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg=="],
 

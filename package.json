@@ -14,7 +14,7 @@
   },
   "type": "module",
   "dependencies": {
-    "htmlforge": "^0.0.15",
+    "htmlforge": "^0.0.17",
     "mdast-util-from-markdown": "^2.0.2",
     "shiki": "^3.15.0"
   }
