@@ -1,5 +1,4 @@
-import { ComponentAnchor } from "@src/core/component/anchor"
-import { SITEMAP, TITLE_PREFIX } from "@src/core/constant"
+import { TITLE_PREFIX } from "@src/core/constant"
 import { type INode, NodeElement, NodeText } from "htmlforge"
 
 export class ComponentNav implements INode {
@@ -17,18 +16,18 @@ export class ComponentNav implements INode {
                     .styleAdd("color", "white")
                     .childAdd(new NodeText(TITLE_PREFIX))
             )
-            .childAdd(
-                new ComponentAnchor({ href: SITEMAP.home.path })
-                    .childAdd(new NodeText(SITEMAP.home.name))
-            )
-            .childAdd(
-                new ComponentAnchor({ href: SITEMAP.blog.path })
-                    .childAdd(new NodeText(SITEMAP.blog.name))
-            )
-            .childAdd(
-                new ComponentAnchor({ href: SITEMAP.contact.path })
-                    .childAdd(new NodeText(SITEMAP.contact.name))
-            )
+            // .childAdd(
+            //     new ComponentAnchor({ href: SITEMAP.home.path })
+            //         .childAdd(new NodeText(SITEMAP.home.name))
+            // )
+            // .childAdd(
+            //     new ComponentAnchor({ href: SITEMAP.blog.path })
+            //         .childAdd(new NodeText(SITEMAP.blog.name))
+            // )
+            // .childAdd(
+            //     new ComponentAnchor({ href: SITEMAP.contact.path })
+            //         .childAdd(new NodeText(SITEMAP.contact.name))
+            // )
     }
 
     build() {
