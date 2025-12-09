@@ -31,7 +31,7 @@ const PROJECTS : Project[] = [
         name: "HTMLForge",
         description: [
             "A minimal, zero dependency library for building fully-styled HTML ",
-            "in Node.js/Typescript without using CSS."
+            "in Node.js/Typescript without using stylesheets."
         ].join("")
     },
     {
@@ -41,6 +41,15 @@ const PROJECTS : Project[] = [
             "A free, cross platform, open source game that allows for the ",
             "creation and exploration of a network of seamlessly linked, ",
             "non-euclidean HTTP addressable spaces with no loading bars. (WIP)"
+        ].join("")
+    },
+    {
+        path: "https://github.com/tlonny/tyburn",
+        name: "Tyburn",
+        description: [
+            "A minimal C-wrapper language that aims to add HM type inference, ",
+            "generics and traits without the additional overhead (safety) provided by ",
+            "languages like rust. (WIP)"
         ].join("")
     },
 ]
