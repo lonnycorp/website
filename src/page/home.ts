@@ -35,6 +35,13 @@ const PROJECTS : Project[] = [
         ].join("")
     },
     {
+        path: "https://github.com/tlonny/astroparse",
+        name: "AstroParse",
+        description: [
+            "A minimal, zero dependency, fully-typed parser combinator library."
+        ].join("")
+    },
+    {
         path: "https://github.com/tlonny/doors",
         name: "Doors",
         description: [
