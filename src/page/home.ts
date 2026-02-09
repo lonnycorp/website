@@ -19,7 +19,16 @@ const IMAGE_PATH = "/asset/home-hero.png"
 
 const PROJECTS : Project[] = [
     {
-        path: "https://github.com/tlonny/lonnymq",
+        path: "https://github.com/lonnycorp/halls",
+        name: "Halls",
+        description: [
+            "A free, open source first-person exploration game. Players traverse ",
+            "3D spaces hosted anywhere on the internet, linked by portals that are addressed ",
+            "by URL. No objective - just portals to step through and places to see!"
+        ].join("")
+    },
+    {
+        path: "https://github.com/lonnycorp/lonnymq",
         name: "LonnyMQ",
         description: [
             "A high performance, multi-tenant, zero dependency, PostgreSQL ",
@@ -27,7 +36,7 @@ const PROJECTS : Project[] = [
         ].join("")
     },
     {
-        path: "https://github.com/tlonny/htmlforge",
+        path: "https://github.com/lonnycorp/htmlforge",
         name: "HTMLForge",
         description: [
             "A minimal, zero dependency library for building fully-styled HTML ",
@@ -35,28 +44,10 @@ const PROJECTS : Project[] = [
         ].join("")
     },
     {
-        path: "https://github.com/tlonny/astroparse",
+        path: "https://github.com/lonnycorp/astroparse",
         name: "AstroParse",
         description: [
             "A minimal, zero dependency, fully-typed parser combinator library."
-        ].join("")
-    },
-    {
-        path: "https://github.com/tlonny/doors",
-        name: "Doors",
-        description: [
-            "A free, cross platform, open source game that allows for the ",
-            "creation and exploration of a network of seamlessly linked, ",
-            "non-euclidean HTTP addressable spaces with no loading bars. (WIP)"
-        ].join("")
-    },
-    {
-        path: "https://github.com/tlonny/tyburn",
-        name: "Tyburn",
-        description: [
-            "A minimal C-wrapper language that aims to add HM type inference, ",
-            "generics and traits without the additional overhead (safety) provided by ",
-            "languages like rust. (WIP)"
         ].join("")
     },
 ]
