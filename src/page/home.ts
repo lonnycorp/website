@@ -15,7 +15,7 @@ type Project = {
     description: string,
 }
 
-const IMAGE_PATH = "/asset/home-hero.png"
+const IMAGE_PATH = "/asset/home-hero.webp"
 
 const PROJECTS : Project[] = [
     {
