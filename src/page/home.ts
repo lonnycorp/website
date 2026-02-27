@@ -44,6 +44,13 @@ const PROJECTS : Project[] = [
         ].join("")
     },
     {
+        path: "https://github.com/lonnycorp/makeboy",
+        name: "MakeBoy",
+        description: [
+            "A minimal file-target build graph runner for TypeScript."
+        ].join("")
+    },
+    {
         path: "https://github.com/lonnycorp/astroparse",
         name: "AstroParse",
         description: [
