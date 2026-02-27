@@ -28,6 +28,13 @@ const PROJECTS : Project[] = [
         ].join("")
     },
     {
+        path: "https://github.com/tlonny/halls-nostalgia",
+        name: "Halls: Nostalgia Pack",
+        description: [
+            "A set of interconnected retro/classic-game levels to explore within Halls"
+        ].join("")
+    },
+    {
         path: "https://github.com/lonnycorp/lonnymq",
         name: "LonnyMQ",
         description: [
