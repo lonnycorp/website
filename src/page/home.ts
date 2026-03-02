@@ -19,19 +19,11 @@ const IMAGE_PATH = "/asset/home-hero.webp"
 
 const PROJECTS : Project[] = [
     {
-        path: "https://github.com/lonnycorp/halls",
-        name: "Halls",
+        path: "https://github.com/lonnycorp/hallways",
+        name: "Hallways",
         description: [
-            "A free, open source first-person exploration game. Players traverse ",
-            "3D spaces hosted anywhere on the internet, linked by portals that are addressed ",
-            "by URL. No objective - just portals to step through and places to see!"
-        ].join("")
-    },
-    {
-        path: "https://github.com/tlonny/halls-nostalgia",
-        name: "Halls: Nostalgia Pack",
-        description: [
-            "A set of interconnected retro/classic-game levels to explore within Halls"
+            "A first-person web browser for 3D spaces. Hyperlinks are replaced by portals that",
+            "can be seamlessly walked through with no loading.",
         ].join("")
     },
     {
@@ -54,7 +46,7 @@ const PROJECTS : Project[] = [
         path: "https://github.com/lonnycorp/makeboy",
         name: "MakeBoy",
         description: [
-            "A minimal file-target build graph runner for TypeScript."
+            "A minimal, zero dependency file-target build graph runner for TypeScript."
         ].join("")
     },
     {
