@@ -34,8 +34,16 @@ const PROJECTS : ProjectParams[] = [
         path: "https://github.com/lonnycorp/htmlforge",
         name: "HTMLForge",
         description: [
-            "A minimal, zero dependency library for building fully-styled HTML ",
-            "in Node.js/Typescript without using stylesheets."
+            "A minimal, zero dependency HTML builder with efficient ",
+            "inline styling for Node.js/Typescript"
+        ].join("")
+    },
+    {
+        path: "https://github.com/lonnycorp/astroparse",
+        name: "AstroParse",
+        description: [
+            "A minimal, zero dependency, fully-typed parser combinator ",
+            "for Node.js/Typescript",
         ].join("")
     }
 ]
